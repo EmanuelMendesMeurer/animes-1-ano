@@ -1,0 +1,151 @@
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ff0000;
+}
+
+.cabeçalho-imagem {
+    width: 70px;
+}
+
+.cabeçalho-titulo {
+    font-size: 32px;
+    color: #ff2e63;
+}
+
+.cabeçalho-lista {
+    list-style: none;
+}
+
+.cabeçalho-lista-item01 {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.cabeçalho-lista-item01:hover {
+    color: #ff2e63;
+}
+
+/* ======== SESSÃO QUEM SOMOS ======== */
+.Quem-somos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.Quem-somos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff2e63;
+}
+
+.Quem-somos-texto {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.Quem-somos-imagem {
+    width: 250px;
+    margin-top: 20px;
+}
+
+/* ======== FILMES ======== */
+.filmes {
+    padding: 50px 20px;
+    background-color: #111111;
+}
+
+.filmes h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff2e63;
+}
+
+.filmes div {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.filmes div:hover {
+    transform: scale(1.02);
+}
+
+.filmes img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.filmes h4 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #ff2e63;
+}
+
+.filmes p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* ======== RODAPÉ ======== */
+.rodapé {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1a1a1a;
+    border-top: 2px solid #ff0000;
+}
+
+.instagram-logo {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.instagram-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* ======== RESPONSIVIDADE ======== */
+@media (min-width: 800px) {
+    .filmes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .filmes div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .filmes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
